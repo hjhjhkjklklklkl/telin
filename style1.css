@@ -46,3 +46,12 @@
 .blog_11{
     margin-left: 6rem;
 }
+#hidden-list1 li a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width:480px){
+    
+    
+
+}

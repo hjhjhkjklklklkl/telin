@@ -1,14 +1,39 @@
-// var nav_3 = document.getElementById('in_up');
-// var icon = document.getElementById('bar');
+// Open and Close Navbar Menu
+const navbarMenu = document.getElementById("menu");
+const burgerMenu = document.getElementById("burger");
+const bgOverlay = document.querySelector(".overlay");
 
-// icon.addEventListener('click',(event)=>{
-//     nav_3.classList.toggle('hide')
-//     event.stopPropagation()
-// })
+if (burgerMenu && bgOverlay) {
+   burgerMenu.addEventListener("click", () => {
+      navbarMenu.classList.add("is-active");
+      bgOverlay.classList.toggle("is-active");
+   });
 
-// document.addEventListener('click',(event)=>{
-//     if(nav_3.classList.contains('hide')){
-//         nav_3.classList.remove('hide')
-//     }
-//     event.stopPropagation()
-// })
+   bgOverlay.addEventListener("click", () => {
+      navbarMenu.classList.remove("is-active");
+      bgOverlay.classList.toggle("is-active");
+   });
+}
+
+// Close Navbar Menu on Links Click
+document.querySelectorAll(".menu-link").forEach((link) => {
+   link.addEventListener("click", () => {
+      navbarMenu.classList.remove("is-active");
+      bgOverlay.classList.remove("is-active");
+   });
+});
+
+// Open and Close Search Bar Toggle
+const searchBlock = document.querySelector(".search-block");
+const searchToggle = document.querySelector(".search-toggle");
+const searchCancel = document.querySelector(".search-cancel");
+
+if (searchToggle && searchCancel) {
+   searchToggle.addEventListener("click", () => {
+      searchBlock.classList.add("is-active");
+   });
+
+   searchCancel.addEventListener("click", () => {
+      searchBlock.classList.remove("is-active");
+   });
+}

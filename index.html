@@ -13,29 +13,40 @@
 </head>
 <body>
     <header>
-        <nav class="nav_1">
-            <div class="nav_2">
-                <div class="nav_11">
-                    <img src="./img/amstor logo.svg" alt="">
-                </div>
-                <div class="nav_3">
-                    <ul >
-                        <li><a href="./aboutus.html">About us</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="./service1.html">Services</a></li>
-                        <li><a href="./ourteam.html">Our Team</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./career.html">Career</a></li>
-                        <li><a href="./contact.html">Contact us</a></li>
-                    </ul>
+        <nav class="navbar container">
+            <div class="jj">
+                <img src="./img/amstor logo.svg" alt="">
+            </div>
+            
+            <div class="burger" id="burger">
+               <span class="burger-line"></span>
+               <span class="burger-line"></span>
+               <span class="burger-line"></span>
+            </div>
+            <span class="overlay"></span>
+            <div class="menu" id="menu">
+                <ul class="menu-inner" id="nav">
+                
+                  <li class="menu-item"><a class="menu-link" href="#">aboutus</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">Products</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">Services</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">Our teamt</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">Blog</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">career</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">contact us</a></li>
+                </ul>  
+                <div class="hidden-close" style="margin-top:2rem;">
+                    <i id="mmm" class="fa-regular fa-circle-xmark" style="width:2rem;"></i>
                 </div>
                 <div class="nav_4">
                     <li><a href="#">Download Brochure</a></li>
                 </div>
+               
             </div>
-        </nav>
-    </header>
-    
+            
+          </div>
+         </nav>
+    </header>  
     <section>
         <header id="header_1">
             <div class="header_2">
@@ -52,7 +63,7 @@
             </div>
             <div class="hero3">
                 <p>Regional Compliance & International Standards</p>
-                <div class="">
+                <div class="deep">
                     <img src="./img/Frame 778.svg" alt="">
                     <img src="./img/hl7-cert 1.svg" alt="">
                     <img src="./img/NABIDH-500-x-325 1.svg" alt="">
@@ -68,13 +79,13 @@
             <div>
                 <img src="./img/pic.png" alt="" height="500px" >
             </div>
+            <div>
             <div class="ann">
                 <div class="ann2">
                 <h3>About our company</h3>
                 <img src="./img/Rectangle 8.png" alt="">
                 </div>
-                <div>
-                    
+                <div>  
                 <h2>We’re delivering the best <br> customer experience</h2>
                 <p>Amstor Technologies LLC is one of the best health care information management system providers for polyclinic and medical centers all across UAE and GCC countries. Amstor is a fast-growing software development company headquartered in Dubai, UAE with a state-of-the art software Development centre based in Trivandrum Techno Park providing cutting-edge web-based clinic management system (EMR) under the brand name of Amstor LeHealth.</p>   
                 <a class="ann1" href="#">Explore</a>
@@ -84,7 +95,7 @@
     </section>
 
     <section class="ann4">
-        <div>
+        <div class="deep1">
             <h3>LeHealth Products</h3>
             <p>“A fully integrated web-based application for managing all types of medical clinics and medical centers in UAE & GCC countries” <br><br>
                 LeHealth provides a complete operations management solution for small, medium & large level Poly clinics, Medical centers, Medical Laboratories & Diagnostic Centres. The centralized architecture of the software allows healthcare management team to handle single or multi-chain facility easy and effective.</p>
@@ -106,7 +117,7 @@
         <div>
             <div class="ann10">
                 <div class="annmariya">
-                    <img src="./img/home page - dental.jpg" alt="" width="1500px" height="800px">
+                    <img src="./img/home page - dental.jpg" alt="" width="1500px" height="700px">
                 </div>
                 <div class="ann11">
                     <h3>LeHealth Dental</h3>
@@ -115,7 +126,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div id="deep3">
             <div>
                 <h4 class="choose">Why choose us?</h4>
             </div>
@@ -185,7 +196,7 @@
     <section>
         <div class="service_14">
             <div>
-                <h146>Our Trusted Clients</h1>
+                <h1>Our Trusted Clients</h1>
             </div>
             <div>
                 <img src="./img/2 41.png" alt="">
@@ -253,3 +264,4 @@
     
 </body>
 </html>
+

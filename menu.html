@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/57c218bfa9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&amp;family=Fira+Sans:ital,wght@0,100;0,400;1,400&amp;family=IBM+Plex+Sans&amp;family=Raleway:wght@100&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>  
+        <ul class="sidebar">
+            <i onclick=hidesidebar() id="mmm" class="fa-regular fa-circle-xmark" style="width:2rem;"></i> 
+            <li class="menu-item"><a class="menu-link" href="#">aboutus</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Products</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Services</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Our teamt</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Blog</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">career</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">contact us</a></li>
+        </ul>
+        <ul>
+            <img src="./img/amstor logo.svg" alt="">
+            <li class="#"><a class="menu-link" href="#">aboutus</a></li>
+            <li class="hideonmobile"><a class="menu-link" href="#">aboutus</a></li>
+            <li class="hideonmobile"><a class="menu-link" href="#">Products</a></li>
+            <li class="hideonmobile"><a class="menu-link" href="#">Our teamt</a></li>
+            <li class="hideonmobile"><a class="menu-link" href="#">Blog</a></li>
+            <li class="hideonmobile"><a class="menu-link" href="#">career</a></li>
+            <li class="hideonmobile"><a class="menu-link" href="#">contact us</a></li>
+            <i onclick=showsidebar() id="menu-button" class="fa-solid fa-bars"></i>
+        </ul>
+    </nav>
+     
+    <script>
+        function showsidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hidesidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+
+        }
+
+
+    </script>
+
+</body>
+</html>
